@@ -436,3 +436,43 @@ nav .nav-links a:hover {
   color: #1B9BEA;
   text-align: center;
 }
+#about-header {
+  height: 20vh;
+}
+#about-header .about-header-text {
+  margin: 5% auto;
+  text-align: center;
+}
+#about-header .about-header-text h2 {
+  font-family: 'Roboto', sans-serif;
+}
+#about-header .about-header-text p {
+  font-family: 'Roboto', sans-serif;
+}
+.about-content {
+  padding-top: 5%;
+  text-align: center;
+  color: white;
+  background-image: url(../img/about-background.png);
+  background-size: cover;
+  height: 80vh;
+}
+.about-content h2 {
+  font-family: 'Roboto', sans-serif;
+}
+.about-content .team-cards {
+  padding-top: 5%;
+  margin-left: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+.about-content .team-cards .team-card {
+  margin: 1%;
+  width: 48%;
+}
+.about-content .about-copyright p {
+  font-size: 0.8rem;
+  color: white;
+  text-align: center;
+}
