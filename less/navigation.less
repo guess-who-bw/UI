@@ -1,0 +1,38 @@
+
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width:95%;
+    height:50px;
+    .guess-who-logo {
+        font-family: Nunito;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 65px;
+        text-align: center;
+        letter-spacing: 0.01em;
+
+        .logo-guess-font{
+            color: #1B9BEA;
+        }
+        .logo-who-font {
+            color: #FFFFFF;
+            text-shadow: #1B9BEA 0px 0px 1px, #1B9BEA 0px 0px 1px, #1B9BEA 0px 0px 1px, #1B9BEA 0px 0px 1px, #1B9BEA 0px 0px 1px,   #1B9BEA 0px 0px 1px;
+        }
+    }
+    .nav-links {
+        height:100%;
+        width:20%;
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        a {
+            color: @twitterBlue;
+            text-decoration: none;
+            &:hover {
+                color: @slateGray;
+            }
+        }
+    }
+}

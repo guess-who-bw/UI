@@ -5,6 +5,13 @@
   font-display: swap;
   src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v12/XRXV3I6Li01BKofINeaE.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -149,4 +156,40 @@ h2 {
 }
 p {
   font-size: 1.4rem;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 95%;
+  height: 50px;
+}
+nav .guess-who-logo {
+  font-family: Nunito;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 65px;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+nav .guess-who-logo .logo-guess-font {
+  color: #1B9BEA;
+}
+nav .guess-who-logo .logo-who-font {
+  color: #FFFFFF;
+  text-shadow: #1B9BEA 0px 0px 1px, #1B9BEA 0px 0px 1px, #1B9BEA 0px 0px 1px, #1B9BEA 0px 0px 1px, #1B9BEA 0px 0px 1px, #1B9BEA 0px 0px 1px;
+}
+nav .nav-links {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .nav-links a {
+  color: #1B9BEA;
+  text-decoration: none;
+}
+nav .nav-links a:hover {
+  color: #657786;
 }
