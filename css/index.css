@@ -1,9 +1,51 @@
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: local('Roboto Thin'), local('Roboto-Thin'), url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxIIzc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmYUtfBBc9.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: local('Nunito ExtraLight'), local('Nunito-ExtraLight'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofA-seUYevN.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Nunito Light'), local('Nunito-Light'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofAnsSUYevN.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Nunito';
@@ -11,6 +53,34 @@
   font-weight: 400;
   font-display: swap;
   src: local('Nunito Regular'), local('Nunito-Regular'), url(https://fonts.gstatic.com/s/nunito/v12/XRXV3I6Li01BKofINeaE.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Nunito SemiBold'), local('Nunito-SemiBold'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofA6sKUYevN.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Nunito Bold'), local('Nunito-Bold'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofAjsOUYevN.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Nunito ExtraBold'), local('Nunito-ExtraBold'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofAksCUYevN.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Nunito Black'), local('Nunito-Black'), url(https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofAtsGUYevN.ttf) format('truetype');
 }
 .solid-button {
   display: flex;
@@ -20,8 +90,26 @@
   color: #FFFFFF;
   border-radius: 4px;
   width: 100px;
-  height: 30px;
-  margin: 2%;
+  height: 32px;
+  font-weight: 300;
+}
+.solid-button:hover {
+  background-color: #9BA6AD;
+}
+.rounder-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1B9BEA;
+  color: #FFFFFF;
+  border-radius: 20px;
+  width: 150px;
+  height: 28px;
+  font-weight: 300;
+  margin: 4% auto;
+}
+.rounder-button:hover {
+  background-color: #9BA6AD;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -172,27 +260,30 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 95%;
+  width: 100%;
   height: 50px;
+  padding: 5% 3% 0.5%;
 }
 nav .guess-who-logo {
-  font-family: Nunito;
-  font-weight: 900;
-  font-size: 48px;
-  line-height: 65px;
+  font-family: 'Nunito', sans-serif;
   text-align: center;
   letter-spacing: 0.01em;
 }
 nav .guess-who-logo .logo-guess-font {
+  font-weight: bold;
   color: #1B9BEA;
+  font-size: 2rem;
+  font-weight: 900;
 }
 nav .guess-who-logo .logo-who-font {
+  font-weight: 900;
   color: #FFFFFF;
+  font-size: 2rem;
   text-shadow: #1B9BEA 0px 0px 1px, #1B9BEA 0px 0px 1px, #1B9BEA 0px 0px 1px, #1B9BEA 0px 0px 1px, #1B9BEA 0px 0px 1px, #1B9BEA 0px 0px 1px;
 }
 nav .nav-links {
   height: 100%;
-  width: 20%;
+  width: 18%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -206,12 +297,13 @@ nav .nav-links a:hover {
 }
 .top-section {
   display: flex;
-  justify-content: space-between;
-  padding: 5%;
+  justify-content: center;
+  width: 100%;
+  height: 40vh;
+  padding-left: 3%;
 }
 .top-section .top-section-left {
-  width: 100%;
-  height: 75%;
+  width: 40%;
   font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: center;
@@ -219,7 +311,6 @@ nav .nav-links a:hover {
   flex-direction: column;
 }
 .top-section .top-section-left .top-section-text {
-  width: 100%;
   color: #1B9BEA;
 }
 .top-section .top-section-left .top-section-text p {
@@ -227,14 +318,121 @@ nav .nav-links a:hover {
   font-size: 0.8rem;
 }
 .top-section .top-section-left .top-section-buttons {
+  width: 60%;
   display: flex;
-  justify-content: flex-start;
-  width: 100%;
+  justify-content: space-between;
+  margin: 3% 0;
+}
+.top-section .top-section-left .top-section-buttons p {
+  font-size: 20px;
 }
 .top-section .top-section-right {
-  width: 100%;
+  width: 50%;
+  padding-right: 10%;
 }
 .top-section .top-section-right img {
-  width: 100%;
+  height: 40vh;
 }
-/* Have fun testing your knowledge with Guess Who! */
+.middle-section {
+  width: 100%;
+  height: 40vh;
+  padding: 3%;
+  background-image: url(/img/blue-background-section.png);
+  background-size: cover;
+  width: 100vw;
+  color: white;
+}
+.middle-section h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  letter-spacing: 5;
+  font-size: 1.5rem;
+}
+.middle-section h2 .category-bold {
+  font-weight: 600;
+}
+.middle-section .middle-section-split {
+  padding: 4% 2%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.middle-section .middle-section-split p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 6%;
+}
+.middle-section .middle-section-split .middle-section-left {
+  width: 37%;
+  margin-right: 5%;
+}
+.middle-section .middle-section-split .middle-section-right {
+  width: 37%;
+  margin-left: 5%;
+}
+.bottom-section {
+  color: #1B9BEA;
+  padding: 3%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+.bottom-section h4 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 7%;
+}
+.bottom-section p {
+  margin-top: 5%;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.bottom-section .high-score {
+  width: 30%;
+}
+.bottom-section .high-score img {
+  margin-top: 7%;
+  width: 50%;
+}
+.bottom-section .category-buttons {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.bottom-section .category-buttons .first {
+  margin-left: 10px;
+}
+.bottom-section .category-buttons .second {
+  margin-right: 10px;
+}
+.bottom-section .category-buttons .third {
+  margin-left: 10px;
+}
+.bottom-section .category-buttons .fourth {
+  margin-right: 10px;
+}
+.bottom-section .category-buttons .fifth {
+  align-self: center;
+  background-color: white;
+  color: #1B9BEA;
+  border: 1px solid #1B9BEA;
+}
+.bottom-section .category-buttons .fifth:hover {
+  background-color: #9BA6AD;
+  color: white;
+}
+.bottom-section .challenge-friends {
+  width: 30%;
+}
+.bottom-section .challenge-friends img {
+  margin-top: 7%;
+  width: 20%;
+}
+.copyright p {
+  margin-top: 8%;
+  font-size: 0.8rem;
+  color: #1B9BEA;
+  text-align: center;
+}

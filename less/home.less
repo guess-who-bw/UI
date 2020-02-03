@@ -1,36 +1,153 @@
 .top-section {
     display:flex;
-    justify-content: space-between;
-    padding:5%;
+    justify-content: center;
+    width:100%;
+    height:40vh;
+    padding-left:3%;
     .top-section-left {
-        width:100%;
-        height:75%;
+        width:40%;
         font-family: @mainFont;
         display: flex;
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
         .top-section-text{
-            width: 100%;
+            // width: 100%;
             color: @twitterBlue;
             p{
                 margin-top: 5%;
                 font-size: 0.8rem;
-            }
+            }// p
         }// .top-section-text
         .top-section-buttons {
+            width:60%;
             display: flex;
-            justify-content: flex-start;
-            width:100%;
+            justify-content: space-between;
+            // width:50%;
+            margin: 3% 0;
+            p{
+                font-size: 20px;
+            }// p
         }// .top-section-buttons
     }// .top-section-left
     .top-section-right {
-        width: 100%;
-        img{
-            width: 100%;
-        }
+        width: 50%;
+        padding-right: 10%;
+        img {
+            height: 40vh;
+        }// img
     }// .top-section-right
 }// .top-section
 
-/* Have fun testing your knowledge with Guess Who! */
+.middle-section {
+    width:100%;
+    height:40vh;
+    padding:3%;
+    background-image: url(/img/blue-background-section.png);
+    background-size: cover;
+    width:100vw;
+    color:white;
+    h2 {
+        font-family: @mainFont;
+        font-weight: 300;
+        letter-spacing: 5;
+        font-size: 1.5rem;
+        .category-bold {
+            font-weight: 600;
+        }// .category-bold
+    }// h2
+    .middle-section-split {
+        padding:4% 2%;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        p {
+            font-family: @mainFont;
+            font-size:1.2rem;
+            font-weight: 500;
+            margin-bottom: 6%;
+        }// p
 
+        .middle-section-left {
+            width:37%;
+            margin-right: 5%;
+        }// .middle-section-left
+        .middle-section-right{
+            width:37%;
+            margin-left: 5%;
+        }// .middle-section-right
+    }// .middle-section-split
+}// .middle-section
+
+.bottom-section {
+    color: @twitterBlue;
+    padding: 3%;
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+    font-family: @mainFont;
+    h4 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 7%;
+    }// h4
+    p {
+        margin-top: 5%;
+        font-size: 1.1rem;
+        font-weight: 400;
+    }// p
+    .high-score {
+        width: 30%;
+        img{
+            margin-top: 7%;
+            width:50%;
+        }// img
+    }//.high-score
+    .category-buttons {
+        width: 30%;
+        display:flex;
+        flex-direction: column;
+
+        .first {
+            margin-left: 10px;
+        }
+        .second {
+            margin-right: 10px;
+        }
+        .third {
+            margin-left: 10px;
+        }
+        .fourth {
+            margin-right: 10px;
+        }
+        .fifth {
+            align-self: center;
+            background-color: white;
+            color:@twitterBlue;
+            border: 1px solid @twitterBlue;
+            &:hover {
+                background-color: @twitterGray;
+                color: white;
+            }
+        }
+    }
+
+
+    .challenge-friends {
+        width: 30%;
+        img{
+            margin-top: 7%;
+            width:20%;
+        }// img
+    }// .challenge-friends
+}// .bottom-section
+
+
+.copyright {
+    p {
+        margin-top: 8%;
+        font-size: 0.8rem;
+        color: @twitterBlue;
+        text-align: center;
+    }
+}
