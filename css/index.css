@@ -323,11 +323,7 @@ nav .nav-links a:hover {
   .top-section {
     justify-content: center;
     text-align: center;
-  }
-}
-@media (max-width: 800px) {
-  .top-section {
-    height: 40vh;
+    height: 50vh;
   }
 }
 .top-section .top-section-left {
@@ -389,6 +385,13 @@ nav .nav-links a:hover {
   width: 100vw;
   color: white;
 }
+@media (max-width: 500px) {
+  .middle-section {
+    height: 80vh;
+    text-align: center;
+    margin: 0;
+  }
+}
 .middle-section h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
@@ -405,6 +408,15 @@ nav .nav-links a:hover {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  .middle-section .middle-section-split {
+    margin-left: 5%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+  }
+}
 .middle-section .middle-section-split p {
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
@@ -415,9 +427,21 @@ nav .nav-links a:hover {
   width: 50%;
   margin-right: 5%;
 }
+@media (max-width: 500px) {
+  .middle-section .middle-section-split .middle-section-left {
+    width: 80%;
+    margin: 0 0 0 0;
+  }
+}
 .middle-section .middle-section-split .middle-section-right {
   width: 37%;
   margin-left: 5%;
+}
+@media (max-width: 500px) {
+  .middle-section .middle-section-split .middle-section-right {
+    width: 50%;
+    margin: 5% 0 0 0;
+  }
 }
 .bottom-section {
   color: #1B9BEA;
@@ -426,6 +450,12 @@ nav .nav-links a:hover {
   justify-content: space-between;
   text-align: center;
   font-family: 'Roboto', sans-serif;
+}
+@media (max-width: 500px) {
+  .bottom-section {
+    flex-direction: column;
+    padding: 0;
+  }
 }
 .bottom-section h4 {
   font-size: 1.4rem;
@@ -440,6 +470,12 @@ nav .nav-links a:hover {
 .bottom-section .high-score {
   width: 30%;
 }
+@media (max-width: 500px) {
+  .bottom-section .high-score {
+    width: 90%;
+    margin: 5%;
+  }
+}
 .bottom-section .high-score img {
   margin-top: 7%;
   width: 50%;
@@ -452,6 +488,13 @@ nav .nav-links a:hover {
 @media (min-width: 1100px) {
   .bottom-section .category-buttons {
     width: 300px;
+  }
+}
+@media (max-width: 500px) {
+  .bottom-section .category-buttons {
+    width: 100%;
+    padding: 5% 20%;
+    background-color: #d0d3da;
   }
 }
 .bottom-section .category-buttons .first {
@@ -478,6 +521,12 @@ nav .nav-links a:hover {
 }
 .bottom-section .challenge-friends {
   width: 30%;
+}
+@media (max-width: 500px) {
+  .bottom-section .challenge-friends {
+    width: 90%;
+    margin: 5%;
+  }
 }
 .bottom-section .challenge-friends img {
   margin-top: 7%;
@@ -521,7 +570,7 @@ nav .nav-links a:hover {
 }
 @media (max-width: 800px) {
   .about-content {
-    height: 75vh;
+    height: 100vh;
   }
 }
 .about-content h2 {
@@ -534,15 +583,21 @@ nav .nav-links a:hover {
   flex-wrap: wrap;
   width: 45%;
 }
-.about-content .team-cards .team-card {
+.about-content .team-cards a {
   margin: 1%;
   width: 35%;
+}
+@media (max-width: 500px) {
+  .about-content .team-cards a {
+    width: 90%;
+    margin: 2%;
+  }
 }
 .about-content .about-copyright {
   width: 75%;
 }
 .about-content .about-copyright p {
-  margin-top: 10%;
+  margin-top: 20%;
   font-size: 0.8rem;
   color: white;
   text-align: center;
