@@ -1,0 +1,9 @@
+This is the marketing site for our GuessWho? app. The app is a game that challenges the player to match tweets to the writers of said tweets. The Goal of this marketing page is to give the user an overview of what they will be seeing and what can be done in the app. 
+
+Our "about us" page is an easy way to access information about the creators of the site and the app.  Each person has a link to their portfolio site or their github repo page if a portfolio site wasn't available at the time of the build.
+
+This app is designed to have increased functionality beyond the scope of the project itself. You can see some examples in the bottom middle section of the page where I've put some buttons with possible game types. 
+
+I've used less to create and manage my css styles. 
+
+There are a couple media sezes supported and I think it looks best on a cell phone. Fitting, sine the app is designed for phones. 
