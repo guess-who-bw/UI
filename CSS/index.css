@@ -203,7 +203,11 @@ header {
   display: flex;
   padding-right: 2%;
   padding-left: 2%;
-  height: 60vh;
+}
+@media (max-width: 1240px) {
+  header {
+    margin-bottom: 5%;
+  }
 }
 header p {
   font-size: 6.4rem;
@@ -214,45 +218,138 @@ header p {
   padding-top: 2%;
   padding-bottom: 4%;
 }
+@media (max-width: 1240px) {
+  header p {
+    font-size: 5.5rem;
+  }
+}
+@media (max-width:1000px) {
+  header p {
+    text-align: center;
+  }
+}
+@media (max-width:500px) {
+  header p {
+    font-size: 5rem;
+  }
+}
 header h2 {
   color: #1B9BEA;
   width: 100%;
   margin-bottom: 3%;
 }
+@media (max-width: 1240px) {
+  header h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width:500px) {
+  header h2 {
+    font-size: 1.8rem;
+  }
+}
 header .leftContainer {
   width: 45%;
+}
+@media (max-width: 1415px) {
+  header .leftContainer {
+    width: 65%;
+  }
+}
+@media (max-width: 1200px) {
+  header .leftContainer {
+    width: 90%;
+  }
+}
+@media (max-width:1000px) {
+  header .leftContainer {
+    width: 100%;
+  }
+}
+@media (max-width:1000px) {
+  header .leftContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 header .leftContainer img {
   margin-right: 2%;
 }
+@media (max-width:1000px) {
+  header .leftContainer .headerButtonContainer {
+    display: flex;
+    justify-content: center;
+  }
+}
 header .headerImgContainer {
-  display: flex;
-  width: 45%;
-  justify-content: flex-start;
+  width: auto;
 }
 header .headerImgContainer img {
   width: 100%;
+}
+@media (max-width:1000px) {
+  header .headerImgContainer img {
+    display: none;
+  }
 }
 main {
   padding: 1% 2% 2% 2%;
   background-image: url(/Design-Files/Main\ background.png);
   color: white;
-  height: 35vh;
 }
 main .startingContainer {
   margin-bottom: 1%;
-  width: 50%;
+  width: 100%;
+}
+@media (max-width:1000px) {
+  main .startingContainer h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 870px) {
+  main .startingContainer h1 {
+    text-align: center;
+    margin-bottom: 3%;
+  }
 }
 main .middleSectionContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   width: 100%;
 }
-main .sampleTweetContainer {
-  width: 35%;
+@media (max-width: 870px) {
+  main .middleSectionContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width:1000px) {
+  main .sampleTweetContainer {
+    margin-right: 3%;
+  }
+}
+@media (max-width: 870px) {
+  main .sampleTweetContainer {
+    margin-right: 0%;
+  }
 }
 main .sampleTweetContainer .sampleTweet h2 {
   padding-bottom: 2%;
+}
+@media (max-width:1000px) {
+  main .sampleTweetContainer .sampleTweet h2 {
+    font-size: 2rem;
+  }
+}
+main .sampleTweetContainer .sampleTweet .sampleTweetImgContainer {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 870px) {
+  main .sampleTweetContainer .sampleTweet img {
+    width: 95%;
+  }
 }
 main .whoSaidIt {
   display: flex;
@@ -265,12 +362,27 @@ main .whoSaidIt img {
 main .whoSaidIt h2 {
   padding-bottom: 2%;
 }
+@media (max-width:1000px) {
+  main .whoSaidIt h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 870px) {
+  main .whoSaidIt h2 {
+    margin-top: 5%;
+  }
+}
 section {
   display: flex;
   justify-content: space-evenly;
   color: #1B9BEA;
   margin-top: 4%;
-  margin-bottom: 10%  ;
+  margin-bottom: 10%;
+}
+@media (max-width: 870px) {
+  section {
+    flex-direction: column;
+  }
 }
 section h2 {
   font-size: 2.4rem;
@@ -287,7 +399,12 @@ section .highScoreContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 15%;
+}
+@media (max-width: 870px) {
+  section .highScoreContainer {
+    margin-bottom: 5%;
+    border-bottom: 1px solid #1B9BEA;
+  }
 }
 section .highScoreContainer h2,
 section .highScoreContainer h3,
@@ -295,13 +412,24 @@ section .highScoreContainer img {
   margin: 2% 2%;
   width: 100%;
 }
+section .highScoreContainer .highScoreImgContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 section .highScoreContainer img {
-  height: 18vh;
-  width: 10vw;
+  max-width: 100%;
+  width: auto;
 }
 section .categoriesContainer {
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 870px) {
+  section .categoriesContainer {
+    margin-bottom: 5%;
+    border-bottom: 1px solid #1B9BEA;
+  }
 }
 section .categoriesContainer h2 {
   padding-bottom: 4%;
@@ -332,10 +460,17 @@ section .categoriesContainer .categoriesBubble5 {
   background-color: white;
   margin-left: 7.5%;
 }
-section .challengeImgs img {
+section .challengeFriendsContainer .challengeImgs img {
   padding: 0% 2%;
   width: 30%;
   margin-left: 2%;
+}
+@media (max-width: 870px) {
+  section .highScoreContainer,
+  section .categoriesContainer,
+  section .challengeFriendsContainer {
+    padding: 0% 25%;
+  }
 }
 .about-us-header {
   height: auto;
