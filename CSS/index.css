@@ -188,17 +188,6 @@ nav .linkContainer a {
     width: 50%;
   }
 }
-footer {
-  text-align: center;
-  color: #1B9BEA;
-  font-weight: bold;
-  padding-bottom: 1%;
-  line-height: 1.6rem;
-  letter-spacing: 0.02rem;
-}
-footer #about-us {
-  color: white;
-}
 header {
   display: flex;
   padding-right: 2%;
@@ -231,6 +220,17 @@ header p {
 @media (max-width:500px) {
   header p {
     font-size: 5rem;
+    line-height: 6rem;
+  }
+}
+@media (max-width: 431px) {
+  header p {
+    font-size: 4.5rem;
+  }
+}
+@media (max-width: 431px) and (max-width: 400px) {
+  header p {
+    font-size: 4rem;
   }
 }
 header h2 {
@@ -320,6 +320,7 @@ main .middleSectionContainer {
 }
 @media (max-width: 870px) {
   main .middleSectionContainer {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -353,8 +354,8 @@ main .sampleTweetContainer .sampleTweet .sampleTweetImgContainer {
 }
 main .whoSaidIt {
   display: flex;
-  width: 100%;
   flex-direction: column;
+  width: 100%;
 }
 main .whoSaidIt img {
   padding: 2% 0%;
@@ -417,6 +418,11 @@ section .highScoreContainer .highScoreImgContainer {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 870px) {
+  section .highScoreContainer .highScoreImgContainer {
+    padding-bottom: 5%;
+  }
+}
 section .highScoreContainer img {
   max-width: 100%;
   width: auto;
@@ -438,14 +444,15 @@ section .categoriesContainer h2 {
 section .categoriesContainer .categoriesBubble {
   width: 85%;
   height: 3vh;
+  color: white;
   border: 1px solid #1B9BEA;
   border-radius: 30px;
+  text-align: center;
+  font-size: 1.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
   background-color: #1B9BEA;
-  font-size: 1.8rem;
   line-height: 2.1rem;
   margin: 2% 0% 6% 0%;
 }
@@ -657,4 +664,15 @@ section .challengeFriendsContainer .challengeImgs img {
   margin-top: 5%;
   padding: 0%;
   padding-bottom: 0.25%;
+}
+footer {
+  text-align: center;
+  color: #1B9BEA;
+  font-weight: bold;
+  padding-bottom: 1%;
+  line-height: 1.6rem;
+  letter-spacing: 0.02rem;
+}
+footer #about-us {
+  color: white;
 }

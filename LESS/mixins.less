@@ -1,0 +1,17 @@
+// Mixins
+.flexColumn(){
+  display: flex;
+  flex-direction: column;
+}
+
+// Parametric Mixins
+.createBubble(@width, @height, @font-color, @background-color, @radius:10px, @font-size-btn) {
+  width: @width;
+  height: @height;
+  color: @font-color;
+  background-color: @background-color;
+  border: 1px solid @header-section-color;
+  border-radius: @radius;
+  text-align: center;
+  font-size: @font-size-btn;
+}

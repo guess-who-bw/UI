@@ -21,9 +21,15 @@ header{
     }
     @media @phone{
       font-size: 5rem;
+      line-height: 6rem;
+    }
+    @media (max-width: 431px){
+      font-size: 4.5rem;
+      @media (max-width: 400px){
+        font-size: 4rem;
+      }
     }
   }
-
   h2{
     color: @header-section-color;
     width: 100%;
@@ -47,8 +53,7 @@ header{
       width: 100%;
     }
     @media @tablet{
-      display: flex;
-      flex-direction: column;
+      .flexColumn();
       align-items: center;
     }
     img{  
@@ -62,8 +67,6 @@ header{
     }
   }
   .headerImgContainer{
-    // display: flex;
-    // justify-content: flex-start;
     width: auto;
     img{
       width: 100%;
@@ -96,7 +99,7 @@ main{
     justify-content: space-evenly;
     width: 100%;
     @media (max-width: 870px){
-      flex-direction: column;
+      .flexColumn();
       align-items: center;
     }
   }
@@ -126,9 +129,8 @@ main{
     }
   }
   .whoSaidIt{
-    display: flex;
+    .flexColumn();
     width: 100%;
-    flex-direction: column;
     img{
       padding: 2% 0%;
     }
@@ -165,8 +167,7 @@ section{
     padding: 5% 0%;
   }
   .highScoreContainer{
-    display: flex;
-    flex-direction: column;
+    .flexColumn();
     align-items: center; 
     @media (max-width: 870px){
       margin-bottom: 5%;
@@ -180,6 +181,9 @@ section{
       width: 100%;
       display: flex;
       justify-content: center;
+      @media (max-width: 870px){
+        padding-bottom: 5%;
+      }
     }
     img{
       max-width: 100%;
@@ -187,8 +191,7 @@ section{
     }
   }
   .categoriesContainer{
-    display: flex;
-    flex-direction: column;
+    .flexColumn();
     @media (max-width: 870px){
       margin-bottom: 5%;
       border-bottom: 1px solid @header-section-color;
@@ -198,16 +201,11 @@ section{
       width: 100%;
     }
     .categoriesBubble{
-      width: 85%;
-      height: 3vh;
-      border: 1px solid @header-section-color;
-      border-radius: 30px;
+      .createBubble(85%, 3vh, white, @header-section-color, 30px, 1.8rem);
       display: flex;
       justify-content: center;
       align-items: center;
-      color: white;
       background-color: @header-section-color;
-      font-size: 1.8rem;
       line-height: 2.1rem;
       margin: 2% 0% 6% 0%;
     }
