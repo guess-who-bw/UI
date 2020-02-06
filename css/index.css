@@ -548,7 +548,7 @@ nav .nav-links a:hover {
   text-align: center;
 }
 body {
-  max-height: 1000px;
+  min-height: 1000px;
 }
 #about-header .about-header-text {
   display: flex;
@@ -575,7 +575,7 @@ body {
   padding-top: 5%;
   text-align: center;
   color: white;
-  background-image: url(../img/about-background.png);
+  background-image: url(https://github.com/guess-who-bw/UI/tree/gh-pages/img);
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
