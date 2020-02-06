@@ -566,8 +566,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 .about-content {
-  position: absolute;
-  bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
