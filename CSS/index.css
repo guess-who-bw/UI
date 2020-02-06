@@ -340,5 +340,71 @@ section .challengeImgs img {
 }
 .about-us-main {
   background-image: url(/Design-Files/Big\ Blue\ Background.png);
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0%;
+}
+.about-us-main h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3.2rem;
+  line-height: 4.2rem;
+  letter-spacing: 0.01em;
+  padding-top: 2%;
+  color: white;
+  margin-top: 20%;
+}
+.about-us-main .about-bubble-container {
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+}
+.about-us-main .about-bubble-container .about-bubble {
+  border: 1px solid #1B9BEA;
+  border-radius: 8px;
+  background-color: white;
+  width: 45%;
+  margin: 2% 1%;
+  padding: 2%;
+  display: flex;
+}
+.about-us-main .about-bubble-container .about-bubble h2 {
+  color: #14171A;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.6rem;
+  line-height: 3rem;
+  width: 75%;
+  text-align: left;
+  margin-left: 10%;
+}
+.about-us-main .about-bubble-container .about-bubble h3 {
+  color: #657786;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.6rem;
+  line-height: 3rem;
+  padding: 0%;
+  width: 75%;
+  text-align: left;
+  margin-left: 10%;
+}
+.about-us-main .about-bubble-container .about-bubble .bubble-img {
+  width: 25%;
+  border-radius: 100px;
+}
+.about-us-main .about-bubble-container .about-bubble .name-title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-us-main .about-bubble-container .about-bubble .gitImg {
+  height: 2vh;
+}
+.about-us-main footer {
+  margin-top: 5%;
+  padding: 0%;
+  padding-bottom: 0.25%;
 }
