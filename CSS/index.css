@@ -302,6 +302,9 @@ main .startingContainer {
   margin-bottom: 1%;
   width: 100%;
 }
+main .startingContainer #pres {
+  font-weight: bold;
+}
 @media (max-width:1000px) {
   main .startingContainer h1 {
     font-size: 3rem;
