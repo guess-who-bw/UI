@@ -547,10 +547,10 @@ nav .nav-links a:hover {
   color: #1B9BEA;
   text-align: center;
 }
-body {
-  min-height: 1000px;
+.about-body {
+  height: 100%;
 }
-#about-header .about-header-text {
+.about-header-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -559,13 +559,14 @@ body {
   text-align: center;
   color: #1B9BEA;
 }
-#about-header .about-header-text h2 {
+.about-header-text h2 {
   font-family: 'Roboto', sans-serif;
 }
-#about-header .about-header-text p {
+.about-header-text p {
   font-family: 'Roboto', sans-serif;
 }
 .about-content {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -573,7 +574,10 @@ body {
   padding-top: 5%;
   text-align: center;
   color: white;
-  background-image: url(../img/about-background.png);
+  background: url(../img/about-background.png) repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 @media (max-width: 800px) {
@@ -611,10 +615,11 @@ body {
     margin: 2%;
   }
 }
-.about-content .team-cards .about-copyright {
+.about-content .about-copyright {
   width: 100%;
+  margin-top: 12.3vh;
 }
-.about-content .team-cards .about-copyright p {
+.about-content .about-copyright p {
   font-size: 0.8rem;
   color: white;
   text-align: center;
