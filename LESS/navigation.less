@@ -1,0 +1,28 @@
+nav{
+  width: 100%;
+  display: flex;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 1%;
+  .linkContainer{
+    display: flex;
+    flex-basis: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    a{
+      width: 15%;
+      color: @header-section-color;
+      text-align: center;
+      @media @tablet{
+        width: 30%;
+      }
+      @media (max-width: 550px) {
+        font-size: 1.5rem;
+        width: 40%;
+      }
+      @media @phone{
+        width: 50%;
+      }
+    }
+  }
+}
