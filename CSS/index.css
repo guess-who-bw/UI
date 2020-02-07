@@ -580,10 +580,6 @@ section .challengeFriendsContainer .challengeImgs img {
     align-items: center;
   }
 }
-.about-us-main .about-bubble-container #bubble-img1 {
-  background-color: #1B9BEA;
-  width: 35%;
-}
 .about-us-main .about-bubble-container .about-bubble {
   border: 1px solid #1B9BEA;
   border-radius: 8px;
